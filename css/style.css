@@ -16,32 +16,29 @@
   height: 100px;
   flex-wrap: wrap;
 }
-
-.item1 {
-  background-color: rgb(253, 67, 42);
+.item:nth-child(1) {
+  order: -2;
+  flex-basis: calc(100% / 2);
   border-top-left-radius: 25px;
-  width: 50%;
+  background-color: #fd644d;
+}
+.item:nth-child(2) {
   order: 1;
+  flex-basis: calc(100% / 3);
+  background-color: #4983b2;
 }
-
-.item2 {
-  order: 4;
-  background-color: rgb(81, 81, 255);
+.item:nth-child(3) {
+  flex-basis: calc(100% / 3);
+  background-color: #663797;
 }
-
-.item3 {
-  order: 3;
-  background-color: purple;
-}
-
-.item4 {
-  order: 5;
-  background-color: green;
-}
-
-.item5 {
-  width: 50%;
+.item:nth-child(4) {
   order: 2;
-  background-color: orange;
+  flex-basis: calc(100% / 3);
+  background-color: #0e7f12;
+}
+.item:nth-child(5) {
+  order: -1;
+  flex-basis: calc(100% / 2);
   border-top-right-radius: 25px;
+  background-color: #fda429;
 }
